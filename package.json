@@ -1,5 +1,5 @@
 {
-  "name": "auth",
+  "name": "secure-hub",
   "version": "1.0.0",
   "description": "basic authentication project",
   "main": "dist/app.js  ",
