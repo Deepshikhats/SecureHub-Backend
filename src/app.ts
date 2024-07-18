@@ -6,7 +6,7 @@ import UserRouter from "./routes/userRoutes";
 /*******************   CONSTANTS  ************************* */
 const app = express();
 const corsOptions = {
-  origin: "https://secure-hub-frontend.vercel.app", // Allow only this origin
+  origin: "https://secure-hub-frontend.vercel.app/", // Allow only this origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Allow these methods
   allowedHeaders: "Content-Type,Authorization", // Allow these headers
 };
