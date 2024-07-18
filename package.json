@@ -1,0 +1,35 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "basic authentication project",
+  "main": "dist/app.js  ",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "tsx watch src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "deepshikha",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "eslint": "^9.5.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3",
+    "save-dev": "^0.0.1-security",
+    "tsx": "^4.15.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.14.6",
+    "@types/nodemon": "^1.19.6",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
