@@ -1,11 +1,22 @@
 {
-"compilerOptions": {
-  "module": "commonjs",
-  "esModuleInterop": true,
-  "target": "es2021",
-  "moduleResolution": "node",
-  "sourceMap": true,
-  "outDir": "dist"
-},
-"lib": ["es2021"]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "ES6",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".", 
+    "paths": { //
+      "": ["dist/"]
+    }
+  },
+  "lib": ["es2021"]
 }

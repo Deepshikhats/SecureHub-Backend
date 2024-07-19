@@ -56,7 +56,7 @@ export const generateAccessToken = async (req: Request, res: Response) => {
 
 export const validateToken = async (req: Request, res: Response) => {
   try {
-    const token = req.headers['authorization']?.split(' ')[1]
+    const token = req.headers['authorization']?.split(' ')[1] as string;
     jwt.verify(token, 'secret-key', (err, user) => {
       if (err) return res.status(401).json({ status: false, message: 'unauthorized' })
       return res.status(201).json({ status: true })
@@ -68,6 +68,7 @@ export const validateToken = async (req: Request, res: Response) => {
 
 export const userDetails = async (req: Request, res: Response) => {
   try {
+    //@ts-ignore
     const { name, email } = await User.findOne({ email: req.user.userId })
     return res.status(200).json({ name, email })
   } catch (error) {
