@@ -18,6 +18,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/", UserRouter);
+app.get("/testing", (req, res) => res.send("testing"));
 
 /********************* DB CONNECT ************************** */
 app.listen(PORT, () => console.log("listening"));
