@@ -9,7 +9,6 @@ import express from "express";
 import authenticateToken from "../middlewares/auth";
 
 const router = express.Router();
-
 router.post("/sign-up", createUser);
 router.post("/login", loginUser);
 router.get("/validate-token", validateToken);
